@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title>jVid - jQuery Video Plugin</title>
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/jvid.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.min.css" type="text/css" media="all">
+	</head>
+	<body>
+
+	<header>
+		<h1>jVid</h1>
+		<h4>A jQuery plugin to embed videos* with style.</h4>
+		<h5>*Supports Vimeo &amp; YouTube</h6>
+		<a class='btn' href='https://github.com/matswainson/jvid/archive/master.zip'>Download</a>
+		<a class='btn' href='https://github.com/matswainson/jvid'>Github</a>
+	</header>
+
+	<section class="cf">
+
+	<div class="col">
+
+	<h4>Basic Usage</h4>
+	<h5>HTML</h5>
+	<code><div data-video="118290158"></div></code>
+
+	<h5>JavaScript</h5>
+	<code>$.jVid();</code>
+
+	<h4>Options</h4>
+	<h6>anim</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>arrowScale, bgScale, fade</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>'fade'</td>
+		</tr>
+	</table>
+	<h6>bgArrow</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>light, dark</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>'light'</td>
+		</tr>
+	</table>
+	<h6>bgColor</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>HEX, RGBA</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>'rgba(0,0,0,.6)'</td>
+		</tr>
+	</table>
+	<h6>bgShape</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>circle, square, rounded-square</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>'circle'</td>
+		</tr>
+	</table>
+	<h6>borderColor</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>HEX, RGBA, none</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>'#FFF'</td>
+		</tr>
+	</table>
+	<h6>mini</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>true, false</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>false</td>
+		</tr>
+	</table>
+	<h6>title</h6>
+	<code>data-title="Title"</div></code>
+
+	</div>
+	<div class="col">
+
+	<h4>Examples</h4>
+	
+	<h5 class='vimeo'>Vimeo</h5>
+	<div class="vVimeo" data-video="87008050" data-title="January in Japan"></div>
+	<code>&#60;div class="vVimeo" data-video="87008050" data-title="January in Japan"&#62;&#60;&#47;div&#62;
+&#60;script type="text/javascript"&#62;
+$('.vVimeo').jVid({
+  	 anim: 'arrowScale bgScale fade',
+    bgColor: '#45bbff',
+    bgShape: 'rounded-square'
+    borderColor: 'none'
+});
+&#60;&#47;script&#62;</code>
+
+	<h5 class='youtube'>YouTube</h5>
+	<div class="vYoutube" data-video="tSnfO15cAHE"></div>
+	<code>&#60;div class="vYoutube" data-video="tSnfO15cAHE" data-title="Bob Burnquist - Dreamland"&#62;&#60;&#47;div&#62;
+&#60;script type="text/javascript"&#62;
+$('.vYoutube').jVid({
+    bgArrow: 'dark',
+    bgColor: '#FFF',
+    mini: true
+});
+&#60;&#47;script&#62;</code>
+
+	</div>
+
+	</section>
+
+	<footer>
+		<p>Made by <a href='http://matswainson.com' target='_blank'>Mat Swainson</a></p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jvid.min.js"></script>
+	<script src="js/extras.min.js"></script>
+	<script type="text/javascript">
+		$('.vVimeo').jVid({
+			anim: 'arrowScale bgScale fade',
+			bgColor: '#45bbff',
+			bgShape: 'rounded-square',
+			borderColor: 'none'
+		});
+		$('.vYoutube').jVid({
+			bgArrow: 'dark',
+			bgColor: '#FFF',
+			mini: true
+		});
+	</script>
+  </body>
+</html>
