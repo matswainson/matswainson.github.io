@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>jSound - jQuery Custom SoundCloud Player</title>
+		<meta name="description" content="A jQuery plugin to customise SoundCloud embeds">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/jsound.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.min.css" type="text/css" media="all">
+	</head>
+	<body>
+
+	<header>
+		<h1>jSound</h1>
+		<h4>A jQuery plugin to customise SoundCloud embeds</h4>
+		<a class='btn' href='https://github.com/matswainson/jsound/archive/master.zip'>Download</a>
+		<a class='btn' href='https://github.com/matswainson/jsound'>Github</a>
+	</header>
+
+	<section class="cf">
+
+	<div class="col">
+
+	<h4>Examples</h4>
+
+	<iframe class="jsound-1" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194881641&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+	<iframe class="jsound-2" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/73448639&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+	<iframe class="jsound-3" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/128721758&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+	</div>
+
+	<div class="col">
+
+	<h4>Basic Usage</h4>
+	<h5>HTML</h5>
+	<code><iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194881641&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="450" scrolling="no" frameborder="no"></iframe></code>
+
+	<h5>JavaScript</h5>
+	<code>$.jSound();</code>
+
+	<h4>Options</h4>
+	<h6>mini</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>true, false</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>false</td>
+		</tr>
+	</table>
+	<h6>theme</h6>
+	<table>
+		<tr>
+			<td>Options</td>
+			<td>'light', 'dark'</td>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>'light'</td>
+		</tr>
+	</table>
+
+	</div>
+
+	</section>
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jsound.min.js"></script>
+	<script src="js/extras.min.js"></script>
+	<script type="text/javascript">
+		$('.jsound-1').jSound({
+			mini: true
+		});
+		$('.jsound-2').jSound({
+			theme: 'dark'
+		});
+		$('.jsound-3').jSound({
+			mini: true
+		});
+	</script>
+	
+  </body>
+</html>
