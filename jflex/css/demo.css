@@ -8,13 +8,14 @@ h1, h2, h4 {
 }
 
 h1 {
+	color: #57a5b2;
 	font-size: 32px;
 	font-weight: bold;
 	padding: 0 0 20px;
 }
 
 h2 {
-	color: #777;
+	color: #a7d5e2;
 	font-size: 18px;
 	padding: 0 0 40px;
 }
@@ -87,9 +88,9 @@ code {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 	color: #777;
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
 	letter-spacing: 1px;
-	line-height: 24px;
+	line-height: 18px;
 	margin: 20px auto 0 auto;
 	max-width: 320px;
 	padding: 12px;
@@ -117,7 +118,6 @@ footer a {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 	color: #777;
 	display: inline-block;
-	font-weight: bold;
 	margin: 0 10px 40px;
 	padding: 12px;
 	text-decoration: none;
@@ -131,4 +131,87 @@ footer a {
 .btn:hover {
 	background: #ddd;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.slides img {
+	width: 100%;
+}
+
+@media (min-width: 980px) {
+	#container {
+		margin: 0;
+		max-width: 1440px;
+		padding: 0;
+		text-align: left;
+	}
+	header {
+		background-color: #eee;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+		margin-bottom: 2%;
+		padding: 2% 0 0;
+	}
+	header h1 {
+		padding-left: 2%;
+	}
+	header div {
+		margin: 0 auto;
+		max-width: 1440px;
+	}
+	h1, h2 {
+		display: inline-block;
+	}
+	h2 {
+		padding-left: 10px;
+	}
+	h4 {
+		padding: 0 0 20px;
+		text-align: left;
+	}
+	section {
+		float: left;
+		margin-left: 2%;
+		width: 56%;
+	}
+	section h4 {
+		padding-top: 20px;
+	}
+	aside {
+		float: left;
+		margin: 0 2%;
+		width: 38%;
+	}
+	code {
+		margin: 0 0 20px;
+		max-width: inherit;
+	}
+	.support li {
+		padding: 0 0 5px;
+		width: auto;
+	}
+	.support li:after {
+		content: ',';
+		padding-right: 5px;
+	}
+	.support li:nth-child(5):after,
+	.support li:nth-child(6):after {
+		content: none;
+	}
+	.support li:nth-child(6) {
+		clear: left;
+	}
+	footer {
+		clear: both;
+	}
+	.btn {
+		background-color: #fff;
+		float: right;
+		margin: 0 2% 0 0;
+	}
+	.options li {
+		padding: 0 0 20px;
+	}
+	.options li,
+	.options li i {
+		text-align: left;
+	}
 }
