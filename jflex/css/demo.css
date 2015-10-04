@@ -192,12 +192,8 @@ footer a {
 		content: ',';
 		padding-right: 5px;
 	}
-	.support li:nth-child(5):after,
-	.support li:nth-child(6):after {
+	.support li:nth-child(8):after {
 		content: none;
-	}
-	.support li:nth-child(6) {
-		clear: left;
 	}
 	footer {
 		clear: both;

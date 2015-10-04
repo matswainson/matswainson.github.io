@@ -2,6 +2,7 @@
 
 	$('.flex').jFlex({
 		autoplay: true,
+		showArrows: true,
 		titles: 'bottom'
 	});
 
