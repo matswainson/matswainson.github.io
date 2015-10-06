@@ -2,14 +2,16 @@
 
 	$('.flex').jFlex({
 		autoplay: true,
+		highlightColor: '#3b808d',
 		showArrows: true,
+		theme: 'dark',
 		titles: 'bottom'
 	});
 
 	var colorCodes = {
 		'#36BB72': ['=', '/div', 'div', '/li', 'li ', '/ul', 'ul'],
 		'#4099D3': ['&lt;', '&gt;', '"Slide 1"', '"Slide 2"', '"Slide 3"', '"flex"', '"slides"', "'.flex'"],
-		'#E5A02E': ['$', 'class', 'data-title', 'true', "'bottom'", '5000']
+		'#E5A02E': ['$', 'class', 'data-title', 'true', "'#3b808d'", "'bottom'", "'dark'", '5000']
 	};
 
 	String.prototype.replaceAll = function(target, replacement) {
